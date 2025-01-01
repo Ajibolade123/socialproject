@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>socialink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+  }
+  /* hover states */
+  .social-link{
+    transition: 0,3s background-color;
+  }
+  .social-link:hover{
+    background-color: var(--Green);
+    color: var(--Grey900);
+    font-weight: 500;
+    cursor: pointer;
+  }
+ @media screen and (min-width: 768px) {
+  body{
+    font-family: inter;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  p{
+    font-size: 14px;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Grey900);
+    color: var(--White);
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: var(--Grey800);
+    padding: 24px;
+    border-radius: 6px;
+  }
+  img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .social-link{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--Grey700);
+    margin-bottom: 10px;
+    padding: 12px 0 ;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .main{
+    width: 100%;
+  }
+  .Instagram{
+    margin-bottom: 0;
+  }
+  .stack{
+    font-size: 12px;
+  }
+  .name{
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+  .location{
+    color: var(--Green);
+    margin-top: 5px;
+    font-size: 12px;
+  }
+ }
+  @media screen and (max-width: 768px){
+    main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Grey900);
+    color: var(--White);
+  }
+  body{
+    font-family: inter;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  p{
+    font-size: 14px;
+  }
+    .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: var(--Grey800);
+    padding: 24px;
+    border-radius: 12px;
+  }
+    img{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+    .name{
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .location{
+      font-size: 15px;
+      color: var(--Green);
+      margin-top: 5px;
+    }
+    .stack{
+      font-size: 15px;
+    }
+    .main{
+    width: 100%;
+  }
+  .Instagram{
+    margin-bottom: 0;
+  }
+  .social-link{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--Grey700);
+    margin-bottom: 10px;
+    padding: 12px 0 ;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="header"><img src="thumbnails/avatar-jessica.jpeg" alt="avatar-jessica">
+        <p class="name">Jessica Randall</p>
+      <p class="location">London,United Kingdom</p>
+      <p class="stack">"Front-end developer and avid reader."</p>
+    </div>
+      <div class="main">
+        <div class="social-link git-hub">GitHub</div>
+        <div class="social-link Frontend Mentor">Frontend Mentor</div>
+        <div class="social-link linkedin">LinkedIn</div>
+        <div class="social-link twitter">Twitter</div>
+        <div class="social-link Instagram">Instagram</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
