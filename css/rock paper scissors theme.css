@@ -5,6 +5,7 @@ body {
   font-display: swap;
   background-color: var(--bg-color);
   color: var(--color);
+  font-weight: var(--font-weight);
 }
 .rps-move {
     width: 120px;
@@ -18,17 +19,37 @@ body {
     --bg-color: #343a40;
     --color: white; 
   }
+  /* in cases of overidding the os preference */
+  body.light_theme{
+    --bg-color: rgba(251, 251, 251, 0.919);
+    --color: #333;
+    --font-weight: 600;
+  }
    .rps-move{
     --border: 3px solid white;
   }
 }
 /* improve the light mode */
 @media (prefers-color-scheme: light){
+  *{
+    font-weight: 600;
+  }
   body{
-    --bg-color: rgba(226, 226, 226, 0.94);
+    --bg-color: rgba(251, 251, 251, 0.919);
     --color: #333;
+    --font-weight: 600;
+  }
+  body.dark_theme{
+    --bg-color: #343a40;
+    --color: white; 
   }
    .rps-move{
     --border: 3px solid #1d1d1dcd;
+  }
+  .result,.thescore,.themoves{
+    font-weight: 600;
+  }
+  .thescore,.themoves{
+    font-size: 1.2rem
   }
 }

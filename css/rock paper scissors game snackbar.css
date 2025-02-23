@@ -1,0 +1,27 @@
+.dark-light-mode{
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+/* snack bar from material design */
+
+/* .dark-light-mode .snack-bar{
+  position: relative;
+}
+.info{
+  font-family: outfit,sans-serif;
+  font-display: swap;
+  font-size: 1rem;
+}
+.dark,.light{
+  padding: 1.1rem 5rem ;
+  border-radius: 2rem;
+  position: absolute;
+} 
+.dark{
+  background-color: brown;
+}*/

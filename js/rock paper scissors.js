@@ -111,8 +111,8 @@ function playGame(playerMove) {
   document.querySelector(".js-result").innerHTML = result;
 
   document.querySelector(".js-moves").innerHTML = `You 
-<img src="icons/${playerMove}-emoji.png" class="moves"> 
-<img src="icons/${computerMove}-emoji.png" class="moves"> 
+<img src="images/${playerMove}-emoji.png" class="moves"> 
+<img src="images/${computerMove}-emoji.png" class="moves"> 
 Computer`;
 }
 //reset
@@ -144,21 +144,22 @@ function confirmReset() {
   let html = `<div class="js-confirm">
  <p>Do you want to reset the score?</p>
  <div>
-  <button class="js-yes">yes</button>
+  <button class="js-yes">Yes</button>
  <button class="js-no">No</button>
  </div>
  </div>`;
   if (scores.wins || scores.losses || scores.ties === 1) {
     document.querySelector(".confirmation").innerHTML = html;
-    document.querySelector(".js-yes").addEventListener("click", () => {
-      resetButton();
-      hideconfirmReset();
-    });
-    document.querySelector(".js-no").addEventListener("click", () => {
-      hideconfirmReset();
-    });
+      document.querySelector(".js-yes").addEventListener("click", () => {
+        resetButton();
+        hideconfirmReset();
+      });
+      document.querySelector(".js-no").addEventListener("click", () => {
+        hideconfirmReset();
+      });    
   }
 }
 function hideconfirmReset() {
   document.querySelector(".confirmation").innerHTML = "";
 }
+

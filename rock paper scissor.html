@@ -7,8 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="rock paper scissors .css">
-<link rel="stylesheet" href="rock paper scissors theme.css">
+<link rel="stylesheet" href="css/rock paper scissors .css">
+<link rel="stylesheet" href="css/rock paper scissors theme.css">
+<link rel="stylesheet" href="css/rock paper scissors game snackbar.css">
+<!-- load the outfit font here for the snack bar -->
 </head>
 <style>
 
@@ -22,39 +24,54 @@
             Rock Paper Scissor 
           </p>
         </div>
-        <div class="dl-mode">
-          <img src="dark_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="moon">
-        </div>
       </section>
+      <section>
       <div class="move">
       <button
-      class=" js-rock-button rps-move"><img src="rock-emoji.png" alt="rock"></button>
+      class=" js-rock-button rps-move"><img src="images/rock-emoji.png" alt="rock"></button>
       <button
-      class=" js-paper-button rps-move"><img src="paper-emoji.png" alt="paper"></button>
+      class=" js-paper-button rps-move"><img src="images/paper-emoji.png" alt="paper"></button>
     
       <button
-     class=" js-scissors-button rps-move" ><img src="scissors-emoji.png" alt="scissors"></button>
+     class=" js-scissors-button rps-move" ><img src="images/scissors-emoji.png" alt="scissors"></button>
       </div>
-      <div class="score-container">
-    <p class="js-result result"></p>
-    
-    <p class="js-moves themoves"></p>
-    
-    <p class="js-score thescore"></p>
-    
-    </div>
-    <div class="reset">
-      <button 
-     class="reset-button">
-        Reset scores
-      </button>
-      <button class="autoplay">
-         Auto Play
-      </button>
-    </div>
-    <div class="confirmation"></div>
-    </div>
+      </section>
+      <section>
+        <div class="score-container">
+          <p class="js-result result"></p>
+          
+          <p class="js-moves themoves"></p>
+          
+          <p class="js-score thescore"></p>
+          
+          </div>
+          <div class="reset">
+            <button 
+           class="reset-button">
+              Reset scores
+            </button>
+            <button class="autoplay">
+               Auto Play
+            </button>
+          </div>
+          <div class="confirmation"></div>
+          </div>
+      </section>
+      <section class="dark-light-mode">
+        <div class="snack-bar">
+          <div class="dark">
+            <p class="info">
+              Darkmode
+            </p>
+          </div>
+          <div class="light">
+            <p class="info">
+              Lightmode
+            </p>
+          </div>
+        </div>
+      </section>
   </main>
-  <script src="rock paper scissors.js"></script>
+  <script src="js/rock paper scissors.js"></script>
 </body>
 </html> 

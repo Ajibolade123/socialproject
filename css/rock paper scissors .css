@@ -1,6 +1,13 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .header{
+  align-items: center;
  display: flex;
-  width: 100%
+ justify-content: center;
+ width: 100%;
 }
 .header img{
   background-color: rgba(196, 196, 196, 0.237);
@@ -8,11 +15,17 @@
   height: 2rem;
   padding: 1rem;
 }
+.header .dl-mode{
+ position: absolute;
+ right: 5%;
+ top: 22%;
+}
 button {
   font-family: Montserrat, monospace;
   font-display: swap;
   cursor: pointer;
-  
+  outline-color: grey;   
+  outline-width: 2px;               
 }
 .container {
   /* margin: 1cm auto; */
