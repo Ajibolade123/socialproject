@@ -1,0 +1,245 @@
+.header{
+ display: flex;
+  width: 100%
+}
+.header img{
+  background-color: rgba(196, 196, 196, 0.237);
+  border-radius: 50%;
+  height: 2rem;
+  padding: 1rem;
+}
+button {
+  font-family: Montserrat, monospace;
+  font-display: swap;
+  cursor: pointer;
+  
+}
+.container {
+  /* margin: 1cm auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.js-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter:  blur(2,2px);
+  background: rgba(255, 255, 255, 0.193);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(3,3px);
+}
+.js-no,.js-yes{
+  padding: 5px 10px;
+}
+@media (min-width: 768px) {
+  .name {
+    font-size: 32px;
+    margin-bottom: 84px;
+  }
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  img {
+    height: 50px;
+  }
+  .rps-move {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  button:not(:last-child) {
+    margin-right: 20px;
+  }
+  .moves {
+    height: 48px;
+  }
+  .result {
+    font-size: 26px;
+    margin-top: 35px;
+  }
+  .themoves {
+    margin-bottom: 25px;
+  }
+  .reset {
+    margin-top: 12px;
+  }
+  .reset-button,
+  .autoplay {
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: Montserrat;
+  }
+  .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thescore {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .name {
+    font-size: 32px;
+    margin-bottom: 84px;
+  }
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  img {
+    height: 50px;
+  }
+  button:not(:last-child) {
+    margin-right: 20px;
+  }
+  .rps-move {
+    width: 100px;
+    height: 100px;
+    border-width: 2px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .moves {
+    height: 48px;
+  }
+  .result {
+    font-size: 26px;
+    margin-top: 35px;
+  }
+  .themoves {
+    margin-bottom: 25px;
+  }
+  .reset {
+    margin-top: 12px;
+  }
+  .reset-button,
+  .autoplay {
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: Montserrat;
+  }
+  .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thescore {
+    font-size: 17px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .name {
+    font-size: 28px;
+    margin-bottom: 80px;
+  }
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  img {
+    height: 40px;
+  }
+  button:not(:last-child) {
+    margin-right: 10px;
+  }
+  .moves {
+    height: 48px;
+  }
+  .result {
+    font-size: 24px;
+    margin-top: 35px;
+  }
+  .themoves {
+    margin-bottom: 25px;
+  }
+  .reset {
+    margin-top: 12px;
+  }
+  .reset-button,
+  .autoplay {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: Montserrat;
+  }
+  .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thescore {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .name {
+    font-size: 28px;
+    margin-bottom: 80px;
+  }
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  img {
+    height: 30px;
+  }
+  button:not(:last-child) {
+    margin-right: 15px;
+  }
+  .moves {
+    height: 48px;
+  }
+  .result {
+    font-size: 24px;
+    margin-top: 35px;
+  }
+  .themoves {
+    margin-bottom: 25px;
+  }
+  .reset {
+    margin-top: 12px;
+  }
+  .reset-button,
+  .autoplay {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: Montserrat;
+  }
+  .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thescore {
+    font-size: 16px;
+  }
+}
