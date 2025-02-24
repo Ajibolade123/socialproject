@@ -6,6 +6,11 @@ const scores = JSON.parse(localStorage.getItem("score")) || {
 
 updateScore();
 
+/* sound effect */
+function sound (){
+  let theSound = new Audio('zapsplat_household_switch_video_game_controller_click_002_110096.mp3');
+  theSound.play();
+}
 //functions are also values
 //defines the computer moves
 function pickComputerMoves() {
@@ -55,14 +60,17 @@ auto.addEventListener("click", autoPlay);
 
 document.querySelector(".js-rock-button").addEventListener("click", () => {
   playGame("rock");
+  sound();
 });
 
 document.querySelector(".js-paper-button").addEventListener("click", () => {
   playGame("paper");
+  sound();
 });
 
 document.querySelector(".js-scissors-button").addEventListener("click", () => {
   playGame("scissors");
+  sound();
 });
 
 function playGame(playerMove) {
@@ -123,10 +131,13 @@ document.querySelector(".reset-button").addEventListener("click", () => {
 document.body.addEventListener("keydown", (event) => {
   if (event.key === "r") {
     playGame("rock");
+    sound();
   } else if (event.key === "p") {
     playGame("paper");
+    sound();
   } else if (event.key === "s") {
     playGame("scissors");
+    sound();
   } else if (event.key === "a") {
     autoPlay();
   } else if (event.key === "Backspace") {
